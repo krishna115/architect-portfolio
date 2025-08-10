@@ -1,46 +1,55 @@
-import RoleCard from './RoleCard';
-
 export default function HeroSection() {
   return (
-    <section className="bg-gray-50 py-16 px-6 md:px-16">
-      <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center justify-between gap-10">
+    <section className="py-20 px-6 relative overflow-hidden">
+      <div className="max-w-7xl mx-auto flex flex-col items-center text-center relative z-0">
         
-        {/* Left Text Section */}
-        <div className="w-full lg:w-1/3 text-center lg:text-left">
-          <h2 className="text-lg text-gray-600">Hello, I’m</h2>
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">DEEPIKA</h1>
-          <p className="text-gray-600 mb-6">
-            Architect with 12+ years of experience designing residential and commercial spaces. 
-            Passionate about blending aesthetics with functionality.
-          </p>
-          <div className="flex justify-center lg:justify-start gap-4">
-            <a href="mailto:architect@email.com">
-              <img src="/icons/email.png" alt="email" className="h-6 w-6" />
-            </a>
-            <a href="https://behance.net/architect" target="_blank" rel="noreferrer">
-              <img src="/icons/behance.png" alt="behance" className="h-6 w-6" />
-            </a>
-          </div>
-        </div>
+        {/* Large Architect Name in Background */}
+        <h1 className="uppercase text-[20vw] md:text-[20vw] font-medium text-black tracking-tight absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-20 z-0 whitespace-nowrap">
+          DEEPIKA
+        </h1>
 
-        {/* Middle Profile Image */}
-        <div className="w-full lg:w-1/3 flex justify-center">
+        {/* <h1
+  className="absolute text-[15vw] font-bold uppercase text-black opacity-90 mix-blend-overlay pointer-events-none"
+  style={{ lineHeight: "0.9" }}
+>
+  DEEPIKA
+</h1> */}
+
+
+{/* <h1
+  className="absolute text-[20vw] font-medium uppercase bg-[url('/images/deepika4.png')] bg-cover bg-center text-black bg-clip-text pointer-events-none"
+  style={{ lineHeight: "0.9" }}
+>
+  DEEPIKA
+</h1> */}
+
+{/* <h1
+  className="absolute text-[20vw] font-medium uppercase text-black drop-shadow-[0_5px_25px_rgba(0,0,0,0.3)] pointer-events-none"
+  style={{ lineHeight: "0.9" }}
+>
+  DEEPIKA
+</h1> */}
+
+
+
+        {/* Image in front, centered */}
+        <div className="relative z-10">
           <img
-            src="/images/deepika3.png"
-            alt="profile"
-            className="h-72 md:h-96 object-contain"
+            src="/images/deepika4.png"
+            alt="Architect Deepika"
+            className="h-180 md:h-[28rem] object-contain mx-auto"
           />
         </div>
 
-        {/* Right Roles Section */}
-        <div className="w-full lg:w-1/3 flex flex-col items-center lg:items-end gap-6">
-          <RoleCard title="Architect" imageUrl="/roles/architect.png" />
-          <RoleCard title="Urban Planner" imageUrl="/roles/3d.png" />
-          <RoleCard title="Interior Consultant" imageUrl="/roles/interior.png" />
-          <RoleCard title="Model" imageUrl="/roles/interior.png" />
-          <RoleCard title="Author" imageUrl="/roles/interior.png" />
-          <RoleCard title="Researcher" imageUrl="/roles/interior.png" />
-        </div>
+        {/* Paragraphs below */}
+        {/* <div className="w-full flex flex-col md:flex-row justify-between mt-10 px-4 md:px-12 text-sm md:text-base text-gray-700 z-10 relative">
+          <p className="md:w-1/3 text-left">
+            Hello, I'm Deepika, an architect in India. I bring innovative ideas to life through my designs and collaborations.
+          </p>
+          <p className="md:w-1/3 text-right hidden md:block">
+            I bring innovative ideas to life through my designs and collaborations.
+          </p>
+        </div> */}
       </div>
     </section>
   );

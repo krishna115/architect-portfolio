@@ -44,6 +44,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3141501592518854"
+     crossOrigin="anonymous"></script>
+
         <link rel="canonical" href="https://www.ardeepikashukla.com" />
         {/* ✅ Structured Data for SEO */}
         <script

@@ -7,9 +7,9 @@ export default function Header() {
       <div className="text-2xl font-bold">deepika.</div>
       <nav className="space-x-6">
         <Link href="/" className="text-gray-700 hover:text-black">Home</Link>
-        <Link href="#works" className="text-gray-700 hover:text-black">Works</Link>
+        <Link href="/articles" className="text-gray-700 hover:text-black">Articles</Link>
         <Link href="#services" className="text-gray-700 hover:text-black">Services</Link>
-        <Link href="#about" className="text-gray-700 hover:text-black">About me</Link>
+        <Link href="/journey" className="text-gray-700 hover:text-black">My journey</Link>
       </nav>
       <a
         href="mailto:architect@example.com"

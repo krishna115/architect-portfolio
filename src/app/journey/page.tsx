@@ -174,6 +174,7 @@ const timeline: TimelineItem[] = [
 
 
 
+
 export default function JourneyPage() {
   return (
     <div>
@@ -181,12 +182,16 @@ export default function JourneyPage() {
       <main className="max-w-6xl mx-auto px-4 py-12">
         <h1 className="text-4xl font-bold mb-12 text-center">My Journey</h1>
 
-        {/* Timeline grid */}
-        <div className="relative lg:grid lg:grid-cols-[1fr_64px_1fr] lg:gap-8">
-          {/* Vertical center line */}
+        {/* Timeline */}
+        <div className="relative grid grid-cols-1 lg:grid-cols-[1fr_64px_1fr] lg:gap-8">
+          {/* Vertical line */}
           <div
             aria-hidden
-            className="hidden lg:block absolute inset-y-0 left-1/2 -translate-x-1/2 w-px bg-gray-300"
+            className="absolute inset-y-0 left-1/2 -translate-x-1/2 w-px bg-gray-300 hidden lg:block"
+          />
+          <div
+            aria-hidden
+            className="absolute inset-y-0 left-4 w-px bg-gray-300 lg:hidden"
           />
 
           {timeline.map((item, index) => {
@@ -195,7 +200,7 @@ export default function JourneyPage() {
             const DateBlock = () => (
               <div className="flex items-center gap-3 mb-3">
                 {item.day && (
-                  <span className="text-3xl leading-none font-extrabold text-blue-600">
+                  <span className="text-2xl lg:text-3xl leading-none font-extrabold text-blue-600">
                     {item.day}
                   </span>
                 )}
@@ -211,7 +216,7 @@ export default function JourneyPage() {
             );
 
             const CardContent = (
-              <div className="w-full p-6 bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition cursor-pointer">
+              <div className="w-full p-4 lg:p-6 bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition cursor-pointer">
                 <DateBlock />
 
                 {/* Single image → row layout */}
@@ -220,15 +225,17 @@ export default function JourneyPage() {
                     <Image
                       src={item.images[0]}
                       alt={item.title}
-                      width={160}
-                      height={120}
+                      width={140}
+                      height={100}
                       className="rounded-md border border-gray-200 flex-shrink-0"
                     />
                     <div>
-                      <h2 className="text-lg font-semibold text-gray-900">
+                      <h2 className="text-base lg:text-lg font-semibold text-gray-900">
                         {item.title}
                       </h2>
-                      <p className="text-gray-700 mt-1">{item.description}</p>
+                      <p className="text-gray-700 mt-1 text-sm lg:text-base">
+                        {item.description}
+                      </p>
                       {item.link && (
                         <p className="mt-3 text-sm font-medium text-blue-600 hover:underline">
                           Know More →
@@ -238,10 +245,12 @@ export default function JourneyPage() {
                   </div>
                 ) : (
                   <>
-                    <h2 className="text-lg font-semibold text-gray-900">
+                    <h2 className="text-base lg:text-lg font-semibold text-gray-900">
                       {item.title}
                     </h2>
-                    <p className="text-gray-700 mt-1">{item.description}</p>
+                    <p className="text-gray-700 mt-1 text-sm lg:text-base">
+                      {item.description}
+                    </p>
 
                     {item.images && item.images.length > 1 && (
                       <div className="mt-4 flex gap-3 flex-wrap">
@@ -250,7 +259,7 @@ export default function JourneyPage() {
                             key={idx}
                             src={img}
                             alt={`${item.title} image ${idx + 1}`}
-                            width={120}
+                            width={110}
                             height={80}
                             className="rounded-md border border-gray-200"
                           />
@@ -279,15 +288,16 @@ export default function JourneyPage() {
             return (
               <motion.div
                 key={`${item.year}-${item.month || ""}-${item.day || ""}`}
-                className="lg:contents mb-10 lg:mb-14"
-                initial={{ opacity: 0, x: isLeft ? -80 : 80 }}
+                className="contents"
+                initial={{ opacity: 0, x: isLeft ? -60 : 60 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, amount: 0.3 }}
                 transition={{ duration: 0.6, ease: "easeOut" }}
               >
+                {/* Desktop alternating layout */}
                 {isLeft ? (
                   <>
-                    <div className="lg:col-[1]">{Card}</div>
+                    <div className="hidden lg:block lg:col-[1] mb-10">{Card}</div>
                     <div className="hidden lg:flex lg:col-[2] items-center relative">
                       <span className="z-10 block w-3 h-3 rounded-full bg-blue-600 border-4 border-white shadow mx-auto" />
                       <span
@@ -295,11 +305,11 @@ export default function JourneyPage() {
                         className="absolute top-1/2 left-0 right-1/2 -translate-y-1/2 border-t border-gray-300"
                       />
                     </div>
-                    <div className="lg:col-[3]" />
+                    <div className="hidden lg:block lg:col-[3]" />
                   </>
                 ) : (
                   <>
-                    <div className="lg:col-[1]" />
+                    <div className="hidden lg:block lg:col-[1]" />
                     <div className="hidden lg:flex lg:col-[2] items-center relative">
                       <span className="z-10 block w-3 h-3 rounded-full bg-blue-600 border-4 border-white shadow mx-auto" />
                       <span
@@ -307,9 +317,21 @@ export default function JourneyPage() {
                         className="absolute top-1/2 left-1/2 right-0 -translate-y-1/2 border-t border-gray-300"
                       />
                     </div>
-                    <div className="lg:col-[3]">{Card}</div>
+                    <div className="hidden lg:block lg:col-[3] mb-10">{Card}</div>
                   </>
                 )}
+
+                {/* Mobile layout → full width but offset left/right */}
+                <div className="lg:hidden relative mb-10 pl-10 pr-4">
+                  {/* Timeline dot */}
+                  <span className="absolute top-6 left-0 w-3 h-3 rounded-full bg-blue-600 border-2 border-white shadow" />
+                  {/* Connector line */}
+                  <span className="absolute top-7 left-3 w-7 border-t border-gray-300" />
+                  {/* Alternate offset */}
+                  <div className={`${isLeft ? "ml-4" : "mr-4"} max-w-[90%]`}>
+                    {Card}
+                  </div>
+                </div>
               </motion.div>
             );
           })}

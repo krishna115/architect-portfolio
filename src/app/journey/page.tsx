@@ -18,6 +18,127 @@ type TimelineItem = {
 
 const timeline: TimelineItem[] = [
   {
+    year: "1026",
+    month: "July",
+    day: "1",
+    title: "Delegate at the World Bank Group Youth Summit 2026",
+    description: "A Virtual Delegate at the World Bank Group Youth Summit 2026 on FutureWorks: Designing Jobs for the Digital Age.",
+    images: [],
+    link: "https://www.linkedin.com/posts/deepika-shukla_participation-certificate-activity-7478111632515080193-_NiO?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEgeZ-kBqvGlaTfo_aKGqJ6pUuzfkQLf7f0"
+  },
+  {
+    year: "2026",
+    month: "May",
+    day: "13",
+    title: "Planning for Udaipur 2046 – “Aakriti”",
+    description: " This exhibition showcases the vision, strategies, and spatial framework prepared for the Udaipur Master Plan 2046, including the Zonal Development Plan and Local Area Plan.",
+    images: ["https://media.licdn.com/dms/image/v2/D5622AQFsEsYfD2ODbg/feedshare-shrink_800/B56Z4dG03MKMAc-/0/1778604789467?e=1784764800&v=beta&t=f6Zxb6E3SrqJcYiwV6gCpVBE2Bqo3HRyGFT-p11fKzo"],
+    link: "https://www.linkedin.com/posts/spa-master-of-planning-urban-planning_planning-for-udaipur-2046-aakriti-a-glimpse-activity-7460009189940056064-KQ6-?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEgeZ-kBqvGlaTfo_aKGqJ6pUuzfkQLf7f0"
+  },
+  {
+    year: "2026",
+    month: "April",
+    day: "",
+    title: "Master's in Psychology",
+    description: "Master's in Psychology from Indira Gandhi National Open University (IGNOU)",
+    images: ["https://media.licdn.com/dms/image/v2/D5622AQGro_6ZrnWPDA/feedshare-shrink_800/B56Z3A_7x.GUAc-/0/1777059478924?e=1784764800&v=beta&t=gNSGLTzl-5yYh8CvXpa1pzty6unvMtb5Gw1nFBZAvrM"],
+    link: "https://www.linkedin.com/posts/deepika-shukla_psychology-urbanplanning-architecture-activity-7453527683465994240-tjv1?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEgeZ-kBqvGlaTfo_aKGqJ6pUuzfkQLf7f0"
+  },
+  {
+    year: "2026",
+    month: "March",
+    day: "13",
+    title: "Paper Title: Digital Urbanism in Higher Education: Integrating Data-Driven Learning and Spatial Intelligence for Transformative Pedagogy.",
+    description: "Presented my research at the National Seminar on “Education in the Era of Digital Transformation: Redefining Teaching and Learning”, organized by the Centre for Distance and Online Education (CDOE), Panjab University, Chandigarh.",
+    images: ["https://media.licdn.com/dms/image/v2/D5622AQE_ZO6sJzNw_A/feedshare-shrink_800/B56Z0lC2RoJMAc-/0/1774442997063?e=1784764800&v=beta&t=QTr6vRpSJWNaF8Y9nFxvaGGmT7aSjRejxbeT208fPPg"],
+    link: "https://www.linkedin.com/posts/deepika-shukla_urbanplanning-digitaltransformation-highereducation-activity-7442553366993596416-sXuO?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEgeZ-kBqvGlaTfo_aKGqJ6pUuzfkQLf7f0"
+  },
+  {
+    year: "2026",
+    month: "February",
+    day: "27",
+    title: "Completed the self-paced course: “IPBES and IPCC: Bridging Science, Policy and Practice”",
+    description: "An in-depth course on how IPBES and IPCC shape global environmental governance.",
+    images: [],
+    link: "https://www.linkedin.com/posts/deepika-shukla_certificateipbes-and-ipcc-activity-7433119706837897216-8eAF?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEgeZ-kBqvGlaTfo_aKGqJ6pUuzfkQLf7f0"
+  },
+  {
+    year: "2026",
+    month: "February",
+    day: "",
+    title: "Paper Title: Beyond Energy Efficiency: A Comprehensive Approach to Sustainable Cities",
+    description: "The paper appears in the edited volume “Design Dialogues: Intersections of Practice, People and Place.",
+    images: ["https://media.licdn.com/dms/image/v2/D5622AQEoZ5OVSKvJnA/feedshare-shrink_800/B56ZvnMgIqKIAg-/0/1769110373058?e=1784764800&v=beta&t=LbCgwIyGU3QBNzAGjf95ZKoAZCcD8IIox_u1z13Kxyw"],
+    link: "https://www.linkedin.com/posts/deepika-shukla_design2030-sustainablecities-urbanplanning-activity-7420186719628550144-6qh2?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEgeZ-kBqvGlaTfo_aKGqJ6pUuzfkQLf7f0"
+  },
+  {
+    year: "2026",
+    month: "January",
+    day: "",
+    title: "Adaptive Planning for Rural Buddhist Heritage: Lessons for Sustainable Community Development",
+    description: "Honoured to present my research paper at the International Conference on the PRBH-ITRHD (Preservation of Rural Buddhist Heritage), held at Dr. Ambedkar International Center, New Delhi.",
+    images: [],
+    link: "https://www.linkedin.com/posts/deepika-shukla_participation-certificate-activity-7420181364190355456-RwBW?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEgeZ-kBqvGlaTfo_aKGqJ6pUuzfkQLf7f0"
+  },
+
+
+  {
+    year: "2025",
+    month: "November",
+    day: "",
+    title: "Book: Syntactic Strategies for Sustainable Futures",
+    description: "A practical guide to communicating sustainability with clarity, purpose, and ethical impact.",
+    images: ["https://media.licdn.com/dms/image/v2/D5622AQF3OBMR-CPs6w/feedshare-shrink_800/B56ZpscDkCJQAg-/0/1762755885941?e=1784764800&v=beta&t=0PapJeIGCzdbVIp5g5sJetQ6U_tC1Eb9sWDHhRkqKAE"],
+    link: "https://selar.com/ve40008180"
+  },
+  {
+    year: "2025",
+    month: "October",
+    day: "",
+    title: "Research Paper: Panchamahabhuta-Inspired Urbanism: Rethinking Vastu for Climate-Resilient, Smart, and Regenerative Cities",
+    description: "our paper has been published in the #ScopusindexedProceedings of the #NationalConferenceonIndianKnowledgeSystemsforViksitBharat2047 (IKS–VB), now available via #SpringerNature under the #Advancesin21stCenturyHumanSettlementsseries.",
+    images: [],
+    link: "https://www.linkedin.com/posts/srajati-tiwari-420013136_viksit-bharat-2047-iks-vb-ugcPost-7390649863518089216-rs-U?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEgeZ-kBqvGlaTfo_aKGqJ6pUuzfkQLf7f0"
+  },
+  {
+    year: "2025",
+    month: "October",
+    day: "7",
+    title: "JETNET Annual Conference 2025",
+    description: "Paper title: Equity in Motion: Addressing Gaps in Urban Transport Transitions Across Indian Cities, Authors: Ar. Deepika Shukla, Srajati Tiwari & Sri Vidya Kommu",
+    images: [],
+    link: ""
+  },
+  {
+    year: "2025",
+    month: "October",
+    day: "10",
+    title: "Contribution to Academic Discourse at IIT Delhi",
+    description: "Paper title: Designing with Purpose: The Cultural Dimensions of Sustainability and Visual Communication, Authors: Ar. Deepika Shukla, Ar. Srajati Tiwari, and Ar. Piyush Maurya",
+    images: ["https://media.licdn.com/dms/image/v2/D5622AQEERH0NfKtCWQ/feedshare-shrink_800/B56ZnUVvtbI0Ag-/0/1760204102224?e=1784764800&v=beta&t=IWJCL4SkCD8-pkw4PhQa8yfS-a3RVm4BMntBTQwFVDU",
+      "https://media.licdn.com/dms/image/v2/D5622AQGPCx1NljcnEA/feedshare-image-high-res/B56ZnUVvqIJoAo-/0/1760204094988?e=1784764800&v=beta&t=Q4RuR9I0fks6dpGcxy_aMxHuImd4TkPnMcUQ60XSNrs",
+      "https://media.licdn.com/dms/image/v2/D5622AQEb2Mb--LFHrQ/feedshare-image-high-res/B56ZnUVvqZG4As-/0/1760204094887?e=1784764800&v=beta&t=r95yPc8Xp7BBDLH6ziX5TxgY0aoeIuShcmO0j5lL5WE"
+    ],
+    link: "https://www.linkedin.com/posts/srajati-tiwari-420013136_academicdiscourse-iitdelhi-iitdelhi-ugcPost-7382831114702397440-fmRh?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEgeZ-kBqvGlaTfo_aKGqJ6pUuzfkQLf7f0"
+  },
+  {
+    year: "2025",
+    month: "October",
+    title: "Book: After the Liberation: Africa’s Lost Promise and the Fight for a New Future",
+    description: "A powerful examination of how liberation gave way to oppression—and why Africa's youth must reclaim the future.",
+    images: ["https://m.media-amazon.com/images/I/51tfkfOFfxL._SY425_.jpg"],
+    link: "https://www.amazon.com/dp/9999331319"
+  },
+  {
+    year: "2025",
+    month: "September",
+    day: "19",
+    title: "Research Presentation at TIPCE 2025",
+    description: "Our research was presented at TIPCE 2025 – the 3rd International Conference on Transportation Infrastructure Projects: Conception to Execution.",
+    images: [],
+    link: "https://www.linkedin.com/posts/deepika-shukla_tipceiit-roorkee-schedule-activity-7374050808931233792-svE_?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEgeZ-kBqvGlaTfo_aKGqJ6pUuzfkQLf7f0",
+  },
+  {
     year: "2025",
     month: "August",
     day: "15",
